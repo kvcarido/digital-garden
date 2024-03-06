@@ -22,3 +22,8 @@ Understanding `stdin`, `stdout`, and `stderr` is fundamental for working effecti
 ### Standard Error (`stderr`):
 - **What it is:** `stderr` is where your program sends error messages or warnings. It's a separate channel from `stdout`, specifically meant for errors.
 - **Analogical example:** Consider `stderr` as a red warning light on a dashboard. When something goes wrong (an error), your program turns on this light to alert you, separate from the regular output.
+
+```bash
+grep foobar "$file" > /dev/null 2> /dev/null
+# 2> represents the stderr stream, redirects STDOUT and STDERR to a null register
+```
