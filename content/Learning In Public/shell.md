@@ -85,3 +85,18 @@ The conditional statement uses the `test` utility to compare if the `grep` comma
 > When performing comparisons in bash, try to use double brackets `[[` `]]` in favor of simple brackets `[` `]`
 
 ### Shell Globbing
+Globbing is a feature that allows you to use special characters called **wildcards** to match filenames and paths more flexibly when running commands. This makes it easier to work with groups of files or directories without listing them individually.
+
+| Character | Description                                                    |
+| :-------- | -------------------------------------------------------------- |
+| `*`       | Matches any number of characters                               |
+| `?`       | Matches any single character                                   |
+| `[]`      | Matches any single character within the specified range or set |
+| `{}`      | When you have a common substring, expands automatically        |
+Scripting in bash is not the most intuitive, but other options like Python can still be executed from the terminal. 
+
+- The shebang line indicates which interpreter should execute a script
+- Using the `env` command in shebang lines enhances script portability
+- `env` resolves the command's location via the `PATH` environment variable
+- Example shebang line: `#!/usr/bin/env python`
+
